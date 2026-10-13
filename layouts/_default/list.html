@@ -1,0 +1,12 @@
+{{ define "main" }}
+<article class="page">
+  <div class="wrap">
+    <header class="page-head">
+      <p class="eyebrow">{{ with .Parent }}{{ if not .IsHome }}{{ .Title }}{{ end }}{{ end }}</p>
+      <h1>{{ .Title }}</h1>
+      {{ with .Description }}<p class="lede">{{ . }}</p>{{ end }}
+    </header>
+    {{ with .Content }}<div class="prose">{{ . }}</div>{{ end }}
+  </div>
+</article>
+{{ end }}
