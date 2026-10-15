@@ -83,6 +83,12 @@ html[data-variant="spec"] .eyebrow::before { content: "\\* "; color: var(--muted
 
 .site-header { position: sticky; top: 0; z-index: 10; background: color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
 .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 64px; flex-wrap: wrap; }
+.resources { border-bottom: 1px solid var(--line); background: var(--bg-alt); font: 500 13px/1 "Inter", sans-serif; }
+.resources-inner { display: flex; align-items: center; gap: 4px 18px; flex-wrap: wrap; min-height: 34px; }
+.resources-label { color: var(--muted); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; }
+.resources a { color: var(--ink); text-decoration: none; padding: 6px 0; }
+.resources a:hover { color: var(--accent); }
+html[data-variant="spec"] .resources { font-family: var(--font-mono); font-size: 12px; }
 .brand { margin: 0; text-decoration: none; color: var(--ink); font: 700 19px/1 var(--font-head); letter-spacing: -0.01em; }
 .brand-mark { color: var(--purple); }
 .nav { display: flex; gap: 4px 20px; align-items: center; flex-wrap: wrap; font: 500 15px/1 "Inter", sans-serif; }
@@ -245,6 +251,8 @@ html[data-variant="spec"] .industry a { border-radius: 0; font-family: var(--fon
   .nav { width: 100%; flex-wrap: nowrap; overflow-x: auto; gap: 16px; font-size: 14px; }
   .nav a { white-space: nowrap; }
   .nav .nav-cta { display: none; }
+  .resources-inner { flex-wrap: nowrap; overflow-x: auto; }
+  .resources a, .resources-label { white-space: nowrap; }
   .formula { padding: 18px; }
   .formula pre { font-size: 13px; }
   .variant-switcher span { display: none; }

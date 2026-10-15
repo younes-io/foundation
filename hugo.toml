@@ -35,6 +35,31 @@ noChmod = true
     url = '/#members'
     weight = 50
 
+  [[menus.resources]]
+    name = "TLC"
+    url = 'https://docs.tlapl.us/using:tlc:start'
+    weight = 10
+  [[menus.resources]]
+    name = "TLAPS"
+    url = 'https://proofs.tlapl.us/'
+    weight = 20
+  [[menus.resources]]
+    name = "Apalache"
+    url = 'https://apalache-mc.org/'
+    weight = 30
+  [[menus.resources]]
+    name = "Examples"
+    url = 'https://examples.tlapl.us/'
+    weight = 40
+  [[menus.resources]]
+    name = "TLA⁺ By Example"
+    url = 'https://learning.tlapl.us/'
+    weight = 50
+  [[menus.resources]]
+    name = "Lamport's TLA⁺ site"
+    url = 'https://lamport.azurewebsites.net/tla/tla.html'
+    weight = 60
+
   [[menus.community]]
     name = 'GitHub'
     url = 'https://github.com/tlaplus/'

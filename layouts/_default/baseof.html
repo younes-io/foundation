@@ -16,6 +16,12 @@
 </head>
 <body>
   <header class="site-header">
+    <nav class="resources" aria-label="TLA⁺ resources">
+      <div class="wrap resources-inner">
+        <span class="resources-label">TLA⁺ resources</span>
+        {{ range site.Menus.resources }}<a href="{{ .URL }}" target="_blank" rel="noopener">{{ .Name }}</a>{{ end }}
+      </div>
+    </nav>
     <div class="wrap header-inner">
       <a class="brand" href="{{ "/" | relURL }}"><span class="brand-mark">TLA⁺</span> <span class="brand-word">Foundation</span></a>
       <nav class="nav" aria-label="Main">
