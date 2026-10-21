@@ -9,30 +9,55 @@ noChmod = true
   youtubeHandle = 'tlaplusfoundation'
   joinURL = 'https://enrollment.lfx.linuxfoundation.org/?project=tla'
   meetingsURL = 'https://zoom-lfx.platform.linuxfoundation.org/meetings/tla'
+  # Top-level paths that belong to the Foundation; the Foundation nav item stays current inside them.
+  foundationSections = ['blog', 'grants', 'industry', 'challenge']
 
 [markup.goldmark.renderer]
   unsafe = true
 
 [menus]
   [[menus.main]]
-    name = 'News'
-    pageRef = '/blog'
+    name = 'Learn'
+    pageRef = '/learn'
     weight = 10
   [[menus.main]]
-    name = 'Grants'
-    pageRef = '/grants'
+    name = 'Tools'
+    pageRef = '/tools'
     weight = 20
   [[menus.main]]
-    name = 'Industry'
-    pageRef = '/industry'
+    name = 'Community'
+    pageRef = '/community'
     weight = 30
   [[menus.main]]
-    name = 'Challenge'
-    pageRef = '/challenge'
+    name = 'Events'
+    pageRef = '/events'
     weight = 40
   [[menus.main]]
+    name = 'Foundation'
+    identifier = 'foundation'
+    pageRef = '/foundation'
+    weight = 50
+
+  [[menus.foundation]]
+    name = 'Grants'
+    pageRef = '/grants'
+    weight = 10
+  [[menus.foundation]]
+    name = 'News'
+    pageRef = '/blog'
+    weight = 20
+  [[menus.foundation]]
+    name = 'Used in industry'
+    pageRef = '/industry'
+    weight = 30
+  [[menus.foundation]]
+    name = 'GenAI challenge'
+    pageRef = '/challenge'
+    weight = 40
+  [[menus.foundation]]
     name = 'Members'
-    url = '/#members'
+    pageRef = '/foundation'
+    params = { fragment = 'members' }
     weight = 50
 
   [[menus.resources]]
@@ -55,10 +80,6 @@ noChmod = true
     name = "TLA⁺ By Example"
     url = 'https://learning.tlapl.us/'
     weight = 50
-  [[menus.resources]]
-    name = "Lamport's TLA⁺ site"
-    url = 'https://lamport.azurewebsites.net/tla/tla.html'
-    weight = 60
 
   [[menus.community]]
     name = 'GitHub'
@@ -77,8 +98,8 @@ noChmod = true
     url = 'https://docs.tlapl.us/'
     weight = 30
   [[menus.community]]
-    name = 'Conferences'
-    url = 'https://conf.tlapl.us/home/'
+    name = 'Events'
+    pageRef = '/events'
     weight = 40
   [[menus.community]]
     name = 'YouTube'
